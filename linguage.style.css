@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(./img/cartoon\ background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.tittle {
+  margin-bottom: 55px;
+  font-family: "Pacifico", cursive, sans-serif;
+}
+
+/* flags */
+.country-flags {
+  width: 110px;
+  object-fit: cover;
+  border: solid rgba(43, 42, 42, 0.2) 2px;
+  border-radius: 1rem;
+  margin-bottom: 7px;
+}
+
+.country-flags:hover {
+  transition: 0.5s;
+  scale: 1.25;
+}
+
+.flag-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 17px;
+}
+
+/* container */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  max-width: 500px;
+  padding: 30px;
+  position: absolute;
+}
+
+.container-flags {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.flag-subtittle {
+  display: flex;
+  flex-direction: row;
+  gap: 190px;
+  margin: 2px;
+}
+
+.duck {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+
+  img {
+    max-width: 70px;
+    height: auto;
+  }
+}
+/* footer */
+
+footer {
+  margin-bottom: 0;
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  text-underline-offset: none;
+}
+
+.footerimage {
+  height: 1.2rem;
+  width: 1.25rem;
+  padding-bottom: 0rem;
+}
+
+.link-footer {
+  text-decoration: none;
+  color: #9a9797;
+  text-decoration-line: none;
+}
+
+.link-footer:hover {
+  text-decoration-line: underline;
+}
+
+/* media querry */
+
+@media (max-width: 800px) {
+  .country-flags {
+    width: 70px;
+  }
+
+  .flag-c {
+    margin: 0 15px;
+  }
+
+  .container {
+    width: 350px;
+  }
+
+  .flag-subtittle {
+    font-size: 11px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .country-flags {
+    width: 60px;
+  }
+
+  .flag-c {
+    margin: 0 10px;
+  }
+
+  .container {
+    width: 280px;
+  }
+
+  .flag-subtittle {
+    font-size: 11px;
+  }
+
+  .tittle {
+    font-size: 20px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+
+  .duck {
+    img {
+      width: 50px;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .country-flags {
+    width: 40px;
+  }
+
+  .flag-c {
+    margin: 0 8px;
+  }
+
+  .container {
+    width: 230px;
+  }
+
+  .flag-subtittle {
+    font-size: 8px;
+  }
+
+  .tittle {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  footer {
+    font-size: 7px;
+  }
+
+  .duck {
+    img {
+      width: 40px;
+      height: auto;
+    }
+  }
+}
